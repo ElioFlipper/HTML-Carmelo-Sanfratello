@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <div>
+            <label for="email">Email<abbr title="required">*</abbr></label>
+            <input type="email">
+        </div>
+        <div>
+            <label for="password">Password<abbr title="required">*</abbr></label>
+            <input type="password" name="Password" id="Password">
+        </div>
+        <div>
+            <label for="Name">Name <abbr title="required">*</abbr></label>
+            <input id="Name" name="Name" required pattern="[A-Za-z]+" minlength="2" maxlength="20">
+        </div>
+        <div>
+            <label for="LastName">Last Name<abbr title="required">*</abbr></label>
+            <input id="LastName" name="LastName" required pattern="[A-Za-z]+" minlength="2" maxlength="20">
+        </div>
+        <div>
+            <label for="birthday">Date of birth</label>
+            <input type="date" name="birthday" id="birthday">
+        </div>
+        <div>
+            <label for="CellNumber">Cell Number</label>
+            <input type="number" name="CellNumber" id="CellNumber" minlength="7" maxlength="20">
+        </div>
+        <br>
+        <div>
+            <legend>Select your plan:</legend>
+        </div>
+        <div>
+            <input type="radio" id="FreePlan" name="selection" value="FreePlan" />
+            <label for="FreePlan">Free Plan</label>
+        </div>
+
+        <div>
+            <input type="radio" id="PlanA" name="selection" value="PlanA" />
+            <label for="PlanA">Plan A (10€)</label>
+        </div>
+
+        <div>
+            <input type="radio" id="PlanB" name="selection" value="PlanB" />
+            <label for="PlanB">Plan B (20€)</label>
+        </div>
+
+        <div>
+            <input type="radio" id="PlanC" name="selection" value="PlanC" />
+            <label for="PlanC">Plan C (30€)</label>
+        </div>
+        <div>
+            <input type="checkbox" id="ProPlan">
+            <label for="ProPlan">ProPlan</label>
+        </div>
+        <br>
+        <fieldset>
+            <div>
+                <label for="NomeCarta">Nome e Cognome</label>
+                <input type="text" name="NomeCarta" id="NomeCarta" placeholder="Elio Flipper">
+            </div>
+            <div>
+                <label for="NumeroCarta">Numero della carta</label>
+                <input type="number" name="NumeroCarta" id="NumeroCarta" placeholder="1111-2222-3333-4444">
+            </div>
+            <div>
+                <label for="CVC">CVC</label>
+                <input type="number" name="CVC" id="CVC" placeholder="000">
+            </div>
+            <div>
+                <label for="DataScadenza">Data di scadenza</label>
+                <input type="date" name="DataScadenza" id="DataScadenza">
+            </div>
+        </fieldset>
+        <div>
+            <label for="IndirizzoSpedizione">Indirizzo di Spedizione</label>
+            <input type="text" name="IndirizzoSpedizione" id="IndirizzoSpedizione">
+            <label for="NumeroIndirizzo">n°</label>
+            <input type="number" name="NumeroIndirizzo" id="NumeroIndirizzo">
+        </div>
+    </form>
+</body>
+</html>
+    
+    
+
+
