@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NavBar</title>
+    <link rel="stylesheet" href="Navbar.css">
 </head>
 <nav>
     <body>
-        <span>Navbar</span>
-        <a href="#home">Home</a>
-        <a href="#Link">Link</a>
+        <span class="NavBar">Navbar</span>
+        <a href="home">Home</a>
+        <a href="Link">Link</a>
         <span>
             <label for="dropdown"></label>
             <select name="dropdown" id="dropdown">
@@ -20,10 +21,14 @@
                 <option value="3">3</option>
             </select>
         </span>
-        <span>Disabled</span>
+        <span class="Disabled">Disabled</span>
         <label for="Search"></label>
+        <div id="Ricerca">
+        <span class="Ricerca">
         <input type="text" name="Search" placeholder="Search">
         <button>Search</button>
+    </div>
+    </span>
     </nav>
 
     </body>
